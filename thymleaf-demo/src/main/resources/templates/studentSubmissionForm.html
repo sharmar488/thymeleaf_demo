@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form th:action="@{/saveDetails}" method="post">
+	<label for="id">Id:</label>
+        <input type="text" id="id" name="id" required><br>
+<label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="score">Score:</label>
+        <input type="text" id="score" name="score" required><br>
+        
+        <!-- Add more input fields as needed -->
+        
+        <button type="submit">Save</button>
+</form>
+</body>
+</html>
